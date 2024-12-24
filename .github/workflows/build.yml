@@ -1,7 +1,5 @@
-name: Build ZMK firmware
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    runs-on: ubuntu-22.04 # Explicitly set the Ubuntu version
